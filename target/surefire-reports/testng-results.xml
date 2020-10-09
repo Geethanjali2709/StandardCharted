@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="banking" duration-ms="24594" started-at="2020-10-09T09:23:53Z" finished-at="2020-10-09T09:24:18Z">
+    <groups>
+    </groups>
+    <test name="bankTest" duration-ms="24594" started-at="2020-10-09T09:23:53Z" finished-at="2020-10-09T09:24:18Z">
+      <class name="com.banking.testCases.LoginTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.banking.testCases.LoginTest@124753a]" name="setup" is-config="true" duration-ms="19863" started-at="2020-10-09T09:23:54Z" finished-at="2020-10-09T09:24:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_login()[pri:0, instance:com.banking.testCases.LoginTest@124753a]" name="test_login" duration-ms="3270" started-at="2020-10-09T09:24:14Z" finished-at="2020-10-09T09:24:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.banking.testCases.LoginTest@124753a]" name="tearDown" is-config="true" duration-ms="807" started-at="2020-10-09T09:24:17Z" finished-at="2020-10-09T09:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.banking.testCases.LoginTest -->
+    </test> <!-- bankTest -->
+  </suite> <!-- banking -->
+</testng-results>
