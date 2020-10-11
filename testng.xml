@@ -15,6 +15,7 @@
 
 
 <class name ="com.banking.testCases.LoginTest" />
+<class name ="com.banking.testCases.DDTTest" /> 
 
 </classes>
 

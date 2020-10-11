@@ -22,14 +22,15 @@ public class LoginTest extends BaseClass {
 		logger.info("pwd entered");
 		lp.clickSubmit();
 		
-		if(driver.getTitle().contains("Guru99 Bank Manager HomePage"))
+		if(driver.getTitle().contains("Guru99 Bank ManagerHomePage"))
 		{
+			//screenCapture(driver,"login");
 			Assert.assertTrue(true);
 			logger.info("usecased is executed");
 		}
 		else
 		{
-			screenCapture(driver,"loginTest");
+			screenCapture(driver,"test_login");
 			Assert.assertTrue(false);
 			logger.info("usecase failed");
 		}

@@ -1,5 +1,6 @@
 package com.banking.utilities;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -55,6 +56,20 @@ public class Reporting  extends TestListenerAdapter {
 	{
 		extentTest = extentReports.createTest(tr.getName());
 		extentTest.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
+		
+		String path = System.getProperty("user.dir")+"\\Screenshot\\"+tr.getName()+".png";
+		
+		File f = new File(path);
+		
+		if(f.exists())
+		{
+			try {
+				 extentTest.fail("Screenshot is below:"+extentTest.addScreenCaptureFromPath(path));
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	public void onTestSkipped(ITestResult tr)
 	{

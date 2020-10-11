@@ -32,6 +32,11 @@ public class LoginPage {
 	@FindBy(name="btnLogin")
 	@CacheLookup
 	WebElement btnLogin;
+	
+	@FindBy(xpath="/html/body/div[3]/div/ul/li[15]/a")
+	@CacheLookup
+	WebElement btnLogout;
+	
 	public void setUserName(String uname)
 	{
 		//rdriver.findElement(txtUserName).sendKeys(uname);
@@ -49,5 +54,8 @@ public class LoginPage {
 		btnLogin.click();
 	}	
 	
-
+	public void clickLogout()
+	{
+		btnLogout.click();
+	}
 }
